@@ -1,2 +1,2 @@
-# random-num-gen.github.io
+# Random Number Generator
 Custom frontend UI for a random number generator
