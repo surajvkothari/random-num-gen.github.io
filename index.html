@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Number Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Random Number Generator</h1>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5" id="title">Random Number Generator</h1>
+        
+        <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body">
+                <!-- Preset Buttons -->
+                <div class="mb-2">
+                    <label class="d-block mb-2">Presets:</label>
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-outline-secondary preset-btn" data-min="1" data-max="16">1-16</button>
+                        <button type="button" class="btn btn-outline-secondary preset-btn" data-min="1" data-max="2">1-2</button>
+                        <button type="button" class="btn btn-outline-secondary preset-btn" data-min="1" data-max="10">1-10</button>
+                    </div>
+                </div>
+
+                <!-- Input Range Section -->
+                <div class="mb-4">
+                    <label for="minInput" class="form-label">MIN:</label>
+                    <input type="number" class="form-control" id="minInput" placeholder="Enter minimum" value="1">
+                </div>
+                
+                <div class="mb-4">
+                    <label for="maxInput" class="form-label">MAX:</label>
+                    <input type="number" class="form-control" id="maxInput" placeholder="Enter maximum" value="100">
+                </div>
+
+                <!-- Generate Button -->
+                <button class="btn btn-primary w-100 mb-4" id="generateBtn">GENERATE</button>
+
+                <!-- Output Display -->
+                <div class="alert alert-success text-center mb-4">
+                    <div class="display-4 fw-bold" id="output">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
