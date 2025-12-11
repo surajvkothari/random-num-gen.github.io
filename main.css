@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Sekuya&display=swap');
 body {
-    background-color: #FFF3E0;
+    background-color: #FFF3E0 !important;
 }
 
 #title {
